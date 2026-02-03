@@ -369,13 +369,81 @@ add_numbers3(10, hello)를 호출하면
 #     info[name] = call_num
 # print(info)
 
-numbers1 = []
-hello = ['안', '녕', '하', '세', '요']
+# print('1번')
+# numbers1 = []
+# last_num = int(input('숫자 몇 까지 입력하시겠습니까? >>> '))
+# def add_numbers1(n):
+#     for i in range(1,n+1):
+#         numbers1.append(i)
+#     print(numbers1)
+# add_numbers1(last_num)
+#
+# print('2번')
+# def add_numbers2(n):
+#     numbers2 = []
+#     for i in range(1,n+1):
+#         numbers2.append(i)
+#     return numbers2
+# print(add_numbers2(last_num))
+#
+# print('3번')
+# def add_numbers3(n, hello):
+#     numbers3 = []
+#     for i in range(1, n + 1):
+#         numbers3.append(i)
+#     return numbers3 + hello
+# hello = ['안', '녕', '하', '세', '요']
+# print(add_numbers3(10 , hello))
+#
+# print('3번 강사님 정답1')
+# def add_numbers4(n, temp_list):
+#     numbers4 = []
+#     for i in range(1, n+1):
+#         numbers4.append(i)
+#     for letter in temp_list:
+#         numbers4.append(letter)
+#     print(numbers4)
+# add_numbers4(10,['안','녕'])
+#
+# print('3번 강사님 정답2')
+# def add_numbers5(n, temp_list):
+#      for i in range(n):
+#          temp_list.insert(i, i+1)  #i 번지에 i+1값을 더해주니까 0 번지에 1 더해주고, 1번지에 2 더해주고, ... 10까지 가게 됩니다.
+#      print(temp_list)
+# add_numbers5(10, ['안', '녕'])
 
-num = int(input('숫자 몇 까지 입력하시겠습니까? >>> '))
-def add_numbers():
-    for i in range(num):
-        numbers1.append(i+1)
-    print(numbers1)
+'''
+짝수와 홀수의 개수 세기
+list를 입력 받아 짝수와 홀수의 개수를 세는 함수를 작성하시오.
+
+함수 정의
+함수 이름 : count_even_odd
+매개변수 : list인 numbers(요소는 모두 정수일 것)
+
+함수 호출
+count_even_odd([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+실행 예
+짝수의 개수 : 5개
+홀수의 개수 : 5개
+'''
+def count_even_odd(numbers):
+    even = 0
+    odd = 0
+    for number in numbers:
+        if number % 2 == 0:
+            even += 1
+        else :
+            odd += 1
+    print(f'짝수의 개수 : {even}개\n홀수의 개수 : {odd}개')
+count_even_odd([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+
+
+
+
+
+
+
 
 
